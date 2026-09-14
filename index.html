@@ -56,17 +56,18 @@
     .wall item {
       display: contents;
     }
-    .photo-card {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 4px;
-      transition: transform 0.3s ease;
-    }
-    .photo-card:hover {
-      transform: scale(1.02);
-    }
-    /* Random span variations */
+    .media-card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.media-card:hover {
+  transform: scale(1.02);
+}
     .span-col-2 { grid-column: span 2; }
     .span-row-2 { grid-row: span 2; }
     .span-both-2 { grid-column: span 2; grid-row: span 2; }
@@ -183,17 +184,17 @@
 <container>
 	<div>
          <div class="wall" id="photoWall">
-	<a href="UAmemes/uameme1.png" class="image-popup"><img src="UAmemes/uameme1.png" class="photo-card"></a>
-    <a href="UAmemes/IMG_0029.JPG" class="image-popup"><img src="UAmemes/IMG_0029.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0050.JPG" class="image-popup"><img src="UAmemes/IMG_0050.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0309.JPG" class="image-popup"><img src="UAmemes/IMG_0309.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0341.JPG" class="image-popup"><img src="UAmemes/IMG_0341.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0391.JPG" class="image-popup"><img src="UAmemes/IMG_0391.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0474.JPG" class="image-popup"><img src="UAmemes/IMG_0474.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0476.JPG" class="image-popup"><img src="UAmemes/IMG_0476.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0478.JPG" class="image-popup"><img src="UAmemes/IMG_0478.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0479.JPG" class="image-popup"><img src="UAmemes/IMG_0479.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_9890.JPG" class="image-popup"><img src="UAmemes/IMG_9890.JPG" class="photo-card"></a>
+	<a href="UAmemes/uameme1.png" class="image-popup"><img src="UAmemes/uameme1.png" class="media-card"></a>
+    <a href="UAmemes/IMG_0029.JPG" class="image-popup"><img src="UAmemes/IMG_0029.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0050.JPG" class="image-popup"><img src="UAmemes/IMG_0050.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0309.JPG" class="image-popup"><img src="UAmemes/IMG_0309.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0341.JPG" class="image-popup"><img src="UAmemes/IMG_0341.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0391.JPG" class="image-popup"><img src="UAmemes/IMG_0391.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0474.JPG" class="image-popup"><img src="UAmemes/IMG_0474.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0476.JPG" class="image-popup"><img src="UAmemes/IMG_0476.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0478.JPG" class="image-popup"><img src="UAmemes/IMG_0478.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0479.JPG" class="image-popup"><img src="UAmemes/IMG_0479.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_9890.JPG" class="image-popup"><img src="UAmemes/IMG_9890.JPG" class="media-card"></a>
   		</div>
      </div>
 </container>
@@ -212,6 +213,7 @@
 	<div >
          <div class="wall" id="photoWall">
 			 <a href="UAgifs/Di8GfReMvjTiTXzO8HyN.mp4" class="image-popup"><img src="UAgifs/Di8GfReMvjTiTXzO8HyN.mp4" class="photo-card"></a>
+			 <video class="media-card span-col-2" autoplay loop muted playsinline><source src="UAgifs/Di8GfReMvjTiTXzO8HyN.mp4" type="video/mp4"></video>
   		</div>
      </div>
 </container>
@@ -229,32 +231,32 @@
 <container>
 	<div >
          <div class="wall" id="photoWall">
-	<a href="UAmemes/IMG_0077.JPG" class="image-popup"><img src="UAmemes/IMG_0077.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0078.JPG" class="image-popup"><img src="UAmemes/IMG_0078.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0079.JPG" class="image-popup"><img src="UAmemes/IMG_0079.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0307.JPG" class="image-popup"><img src="UAmemes/IMG_0307.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0308.JPG" class="image-popup"><img src="UAmemes/IMG_0308.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0311.JPG" class="image-popup"><img src="UAmemes/IMG_0311.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0312.JPG" class="image-popup"><img src="UAmemes/IMG_0312.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0313.JPG" class="image-popup"><img src="UAmemes/IMG_0313.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0332.JPG" class="image-popup"><img src="UAmemes/IMG_0332.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0333.JPG" class="image-popup"><img src="UAmemes/IMG_0333.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0334.JPG" class="image-popup"><img src="UAmemes/IMG_0334.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0335.JPG" class="image-popup"><img src="UAmemes/IMG_0335.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0337.JPG" class="image-popup"><img src="UAmemes/IMG_0337.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0338.JPG" class="image-popup"><img src="UAmemes/IMG_0338.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0340.JPG" class="image-popup"><img src="UAmemes/IMG_0340.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0342.JPG" class="image-popup"><img src="UAmemes/IMG_0342.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0344.JPG" class="image-popup"><img src="UAmemes/IMG_0344.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0345.JPG" class="image-popup"><img src="UAmemes/IMG_0345.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0346.JPG" class="image-popup"><img src="UAmemes/IMG_0346.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0389.JPG" class="image-popup"><img src="UAmemes/IMG_0389.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_0390.JPG" class="image-popup"><img src="UAmemes/IMG_0390.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_9886.JPG" class="image-popup"><img src="UAmemes/IMG_9886.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_9887.JPG" class="image-popup"><img src="UAmemes/IMG_9887.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_9888.JPG" class="image-popup"><img src="UAmemes/IMG_9888.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_9889.JPG" class="image-popup"><img src="UAmemes/IMG_9889.JPG" class="photo-card"></a>
-    <a href="UAmemes/IMG_9891.JPG" class="image-popup"><img src="UAmemes/IMG_9891.JPG" class="photo-card"></a>
+	<a href="UAmemes/IMG_0077.JPG" class="image-popup"><img src="UAmemes/IMG_0077.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0078.JPG" class="image-popup"><img src="UAmemes/IMG_0078.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0079.JPG" class="image-popup"><img src="UAmemes/IMG_0079.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0307.JPG" class="image-popup"><img src="UAmemes/IMG_0307.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0308.JPG" class="image-popup"><img src="UAmemes/IMG_0308.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0311.JPG" class="image-popup"><img src="UAmemes/IMG_0311.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0312.JPG" class="image-popup"><img src="UAmemes/IMG_0312.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0313.JPG" class="image-popup"><img src="UAmemes/IMG_0313.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0332.JPG" class="image-popup"><img src="UAmemes/IMG_0332.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0333.JPG" class="image-popup"><img src="UAmemes/IMG_0333.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0334.JPG" class="image-popup"><img src="UAmemes/IMG_0334.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0335.JPG" class="image-popup"><img src="UAmemes/IMG_0335.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0337.JPG" class="image-popup"><img src="UAmemes/IMG_0337.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0338.JPG" class="image-popup"><img src="UAmemes/IMG_0338.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0340.JPG" class="image-popup"><img src="UAmemes/IMG_0340.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0342.JPG" class="image-popup"><img src="UAmemes/IMG_0342.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0344.JPG" class="image-popup"><img src="UAmemes/IMG_0344.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0345.JPG" class="image-popup"><img src="UAmemes/IMG_0345.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0346.JPG" class="image-popup"><img src="UAmemes/IMG_0346.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0389.JPG" class="image-popup"><img src="UAmemes/IMG_0389.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_0390.JPG" class="image-popup"><img src="UAmemes/IMG_0390.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_9886.JPG" class="image-popup"><img src="UAmemes/IMG_9886.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_9887.JPG" class="image-popup"><img src="UAmemes/IMG_9887.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_9888.JPG" class="image-popup"><img src="UAmemes/IMG_9888.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_9889.JPG" class="image-popup"><img src="UAmemes/IMG_9889.JPG" class="media-card"></a>
+    <a href="UAmemes/IMG_9891.JPG" class="image-popup"><img src="UAmemes/IMG_9891.JPG" class="media-card"></a>
   		</div>
      </div>
 </container>
