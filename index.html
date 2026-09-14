@@ -70,14 +70,23 @@
     .span-col-2 { grid-column: span 2; }
     .span-row-2 { grid-row: span 2; }
     .span-both-2 { grid-column: span 2; grid-row: span 2; }
-  </style>
+</style>
+<style>
+	.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+</style>
 <style>
 	.transparent-box {
       background-color: rgba(128, 128, 128, 0.5);
 	  border-radius: 8px;
       padding: 20px;
-		display: flex; 
-  justify-content: center; 
+	  display: flex; 
+      justify-content: center; 
 	  max-width: 1300px;
 	  width: 100%;
 	  align-items: center;
@@ -139,8 +148,9 @@
 		 <div class="parallax"></div>
      </section>
 	
-	<container>
-	 <section id="about">
+<container>
+ <section id="about">
+	<div class="center-content">
 		<div class="transparent-box">
           <div class="container">
                <div class="row">
@@ -157,6 +167,7 @@
 			</div>
         </div>
     </div>
+  </div>
 </div>
 </section>
 </container>
