@@ -44,37 +44,47 @@
   font-family: sans-serif;
   overflow-x: hidden;
 }
+
 .wall {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: 300px;
   gap: 5px; 
-  width: 100%; 
+  width: 100%;
   min-height: 100vh;
   grid-auto-flow: dense;
 }
-	.wall > * {
+
+.media-item {
+  position: relative;
   width: 100%;
   height: 100%;
-}
-    .wall item {
-      display: contents;
-    }
-    .media-card {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  overflow: hidden;
   border-radius: 4px;
-  transition: transform 0.3s ease;
+}
+
+.media-card {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
   display: block;
+  transition: transform 0.3s ease;
 }
 
 .media-card:hover {
   transform: scale(1.02);
 }
-    .span-col-2 { grid-column: span 2; }
-    .span-row-2 { grid-row: span 2; }
-    .span-both-2 { grid-column: span 2; grid-row: span 2; }
+
+.span-col-2 { grid-column: span 2; }
+.span-row-2 { grid-row: span 2; }
+.span-both-2 { grid-column: span 2; grid-row: span 2; }
+
+@media (max-width: 600px) {
+  .span-col-2, .span-both-2 {
+    grid-column: span 1;
+  }
+}
 </style>
 <style>
 	.center-content {
@@ -214,7 +224,7 @@
 <container>
 	<div >
          <div class="wall" id="photoWall">
-			 <video class="media-card span-col-2" controls playsinline><source src="UAgifs/v12044gd0000d70u3gnog65r8epssg2g.mp4" type="video/mp4"></video>
+			 <video class="media-card" autoplay loop muted playsinline><source src="UAgifs/v12044gd0000d70u3gnog65r8epssg2g.mp4" type="video/mp4"></video>
 			 <video class="media-card span-col-2" autoplay loop muted playsinline><source src="UAgifs/Di8GfReMvjTiTXzO8HyN.mp4" type="video/mp4"></video>
 			 
   		</div>
